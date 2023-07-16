@@ -256,3 +256,63 @@ height: 100%;
         margin: 0 auto;
     }
 }
+
+/*fact section*/
+
+.factHead h1{
+font-size: 26px;
+font-family: 'Work Sans', sans-serif;
+}
+
+.factHead p{
+    padding: 10px 320px 0px 0px;
+    margin-bottom: 60px;
+}
+
+.factBox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.factBox div{
+    border: 1px solid black;
+    width: 140px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+
+}
+.factBox img{
+    width: 24px;
+}
+.factBox div span{
+    /* display: block; */
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+
+/*fact section responsive*/
+
+@media screen and (max-width:576px) {
+    .factBox{
+        flex-direction: column;
+    }
+
+    .factHead p{
+        padding: 0px;
+    }
+    .factBox div{
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .factHead p{
+        padding: 0px;
+    }
+    .factBox div{
+        margin-right: 4px;
+    }
+}
