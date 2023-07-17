@@ -175,6 +175,22 @@ color: var(--dark-03, #727272);
     .workSection{
         flex-direction: column;
     }
+    .work-feature h1{
+        text-align: center;
+    }
+
+    .work-feature span{
+        display: block;
+        text-align: center;
+    }
+    .work-feature p{
+        padding: 0px;
+    }
+
+    .btn-work-feature{
+        display: flex;
+        margin: auto;
+    }
 }
 
 
@@ -252,11 +268,26 @@ height: 100%;
     .featureDetails p{
         padding:0px;
     }
+    .titleFeature div{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
     .pictureSection div{
         padding: 15px 40px;
         margin: 0 auto;
     }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .featureDetails p{
+        padding: 0px;
+    }
+    .titleFeature p{
+        padding: 0px;
+    }
+    
 }
 
 /*fact section*/
@@ -418,4 +449,3 @@ font-family: 'Work Sans', sans-serif;
     .footer{
         padding: 20px 60px 20px 60px;
     }
-}
